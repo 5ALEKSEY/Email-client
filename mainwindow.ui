@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>672</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Email client</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="recourcefile.qrc">
+    <normaloff>:/Images/Resource/MainLetter.jpg</normaloff>:/Images/Resource/MainLetter.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>0</y>
+      <width>601</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="WriteMessageButton">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Написать письмо</string>
+         </property>
+         <property name="icon">
+          <iconset resource="recourcefile.qrc">
+           <normaloff>:/Images/Resource/DrawLetter.jpg</normaloff>:/Images/Resource/DrawLetter.jpg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>50</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="IncomingMessageButton">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Входящие</string>
+           </property>
+           <property name="icon">
+            <iconset resource="recourcefile.qrc">
+             <normaloff>:/Images/Resource/Letter.jpg</normaloff>:/Images/Resource/Letter.jpg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="SentMessageButton">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Отправленные</string>
+           </property>
+           <property name="icon">
+            <iconset resource="recourcefile.qrc">
+             <normaloff>:/Images/Resource/Arrow.png</normaloff>:/Images/Resource/Arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="DraftButton">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Черновики</string>
+           </property>
+           <property name="icon">
+            <iconset resource="recourcefile.qrc">
+             <normaloff>:/Images/Resource/Draft.png</normaloff>:/Images/Resource/Draft.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="BasketButton">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Корзина</string>
+           </property>
+           <property name="icon">
+            <iconset resource="recourcefile.qrc">
+             <normaloff>:/Images/Resource/Basket.jpg</normaloff>:/Images/Resource/Basket.jpg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="TextEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="MenuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>672</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="FileMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="FileClose"/>
+   </widget>
+   <widget class="QMenu" name="MessageMenu">
+    <property name="title">
+     <string>Сообщения</string>
+    </property>
+    <addaction name="IncomingMessages"/>
+    <addaction name="SentMessages"/>
+    <addaction name="Draft"/>
+    <addaction name="Basket"/>
+    <addaction name="separator"/>
+    <addaction name="EnterTheMessage"/>
+   </widget>
+   <addaction name="FileMenu"/>
+   <addaction name="MessageMenu"/>
+  </widget>
+  <action name="IncomingMessages">
+   <property name="text">
+    <string>Входящие</string>
+   </property>
+  </action>
+  <action name="SentMessages">
+   <property name="text">
+    <string>Отправленные</string>
+   </property>
+  </action>
+  <action name="Draft">
+   <property name="text">
+    <string>Черновики</string>
+   </property>
+  </action>
+  <action name="Basket">
+   <property name="text">
+    <string>Корзина</string>
+   </property>
+  </action>
+  <action name="FileClose">
+   <property name="icon">
+    <iconset resource="recourcefile.qrc">
+     <normaloff>:/Images/Resource/Exit.png</normaloff>:/Images/Resource/Exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="EnterTheMessage">
+   <property name="text">
+    <string>Написать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="recourcefile.qrc"/>
+ </resources>
+ <connections/>
+</ui>

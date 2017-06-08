@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Resource/Letter.jpg</file>
+        <file>Resource/MainLetter.jpg</file>
+        <file>Resource/Arrow.png</file>
+        <file>Resource/Draft.png</file>
+        <file>Resource/Basket.jpg</file>
+        <file>Resource/DrawLetter.jpg</file>
+        <file>Resource/Exit.png</file>
+    </qresource>
+</RCC>
